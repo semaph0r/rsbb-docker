@@ -37,6 +37,5 @@ WORKDIR /refbox/catkin_ws/
 
 RUN /bin/bash -c "source /opt/ros/indigo/setup.bash; \
 catkin_make; \
-source $(pwd)/devel/setup.bash;\
-roslaunch rsbb_etc rsbb.launch"
+source $(pwd)/devel/setup.bash;"
 

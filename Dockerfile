@@ -35,6 +35,9 @@ RUN cd rsbb/ && git pull && git submodule update --init
 
 WORKDIR /refbox/catkin_ws/
 
+# ports for ssh, standard http and rsbb
+EXPOSE 23 80 6666
+
 RUN /bin/bash -c "source /opt/ros/indigo/setup.bash; \
 catkin_make; \
 source $(pwd)/devel/setup.bash;"

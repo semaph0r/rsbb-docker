@@ -6,7 +6,6 @@ script:
 # build image
 - docker build -t semaph0r/rsbb .
 # push image
-- >
-  docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
-  docker tag semaph0r/rsbb semaph0r/rsbb:latest
-  docker push semaph0r/rsbb
+- docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
+- docker tag semaph0r/rsbb semaph0r/rsbb:latest
+- docker push semaph0r/rsbb

@@ -4,7 +4,7 @@ services:
 language: bash
 script:
 # build image
-- docker builo -t hypriot/rpi-mysql .
+- docker build -t semaph0r/rsbb .
 # push image
 - >
   docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"

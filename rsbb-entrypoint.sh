@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# setup ros environment
-source /refbox/catkin_ws/devel/setup.bash
+set -i
 
-bash
+# setup ros environment
+source "/opt/ros/$ROS_DISTRO/setup.bash"
+source "/refbox/catkin_ws/devel/setup.bash"
+
+exec "$@"

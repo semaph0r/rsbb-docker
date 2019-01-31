@@ -43,6 +43,7 @@ catkin_make; \
 source $(pwd)/devel/setup.bash;"
 
 COPY ./rsbb-entrypoint.sh /
+RUN chmod +x /rsbb-entrypoint.sh
 
 ENTRYPOINT ["/rsbb-entrypoint.sh"]
 CMD ["bash"]
